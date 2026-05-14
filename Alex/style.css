@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header{
+    background-color: rgba(255,255,255,0.3);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1{
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: crimson;
+}
+
+.hero{
+    height: 90vh;
+
+    background-image:
+    linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.3),
+        rgba(0,128,0,0.3),
+        rgba(255,0,0,0.3)
+    ),
+    url("https://cdn.discordapp.com/attachments/1462064086354235517/1504172180982988820/image.png?ex=6a060502&is=6a04b382&hm=fca3d8ba8169b421a6e79dcd200a1e82d96cbbff9fda1bb177fbed2b6aae30a4");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,0.35);
+
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    width: 70%;
+
+    backdrop-filter: blur(8px);
+}
+
+.overlay h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.overlay p{
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+button{
+    padding: 15px 35px;
+    border: none;
+    background-color: crimson;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: darkred;
+}
+
+.info{
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.info h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.info p{
+    max-width: 800px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.8;
+}
