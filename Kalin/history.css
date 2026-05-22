@@ -17,7 +17,6 @@ body {
             rgba(0, 128, 0, 0.4),
             rgba(255, 0, 0, 0.45)
         ),
-        url("https://cdn.discordapp.com/attachments/1462064086354235517/1504172180982988820/image.png?ex=6a060502&is=6a04b382&hm=fca3d8ba8169b421a6e79dcd200a1e82d96cbbff9fda1bb177fbed2b6aae30a4");
     background-attachment: fixed;
     background-size: cover;
     min-height: 100vh;
