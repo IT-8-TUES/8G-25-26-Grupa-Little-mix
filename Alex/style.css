@@ -31,7 +31,10 @@ nav a{
 nav a:hover{
     color: crimson;
 }
-
+nav #home{
+    font-weight: bolder;
+    font-style: italic;
+}
 .hero{
     height: 90vh;
 

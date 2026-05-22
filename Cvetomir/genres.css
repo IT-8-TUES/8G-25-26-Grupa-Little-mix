@@ -1,0 +1,164 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:   rgba(255, 255, 255, 0.3);
+    font-family: "Oswald", sans-serif;
+}
+
+header{
+    background-color:  rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    text-align: center;
+    border-bottom-style: solid ;
+}
+
+header h1{
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+.page{
+    background-image:
+        linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.3),
+        rgba(0,128,0,0.3),
+        rgba(255,0,0,0.3)
+    )
+}
+nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: crimson;
+        border-bottom-style: solid ;
+}
+nav #genres{
+    font-weight: bolder;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.folk{
+    border-style: solid;
+    background-color: rgba(0,0,0,0.35);
+    border-radius: 10px;
+    width: 70%;
+    padding: 30px;
+    margin: 0 auto;
+    backdrop-filter: blur(8px);
+    margin-top: 15px;
+}
+img{
+    border-radius: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.folk p{
+    line-height: 1.7;
+    font-size: 1.1em;
+    color: white;
+    white-space: inherit;
+}
+.folk h3{
+    font-size: 3em;
+    margin-bottom: 16px;
+    border-bottom: 2px solid;
+    display: block;
+    width: 100%;
+    padding-bottom: 8px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.orthodox{
+    border-style: solid;
+    background-color: rgba(0,0,0,0.35);
+    border-radius: 10px;
+    width: 70%;
+    padding: 30px;
+    margin: 0 auto;
+    backdrop-filter: blur(8px);
+    margin-top: 15px;
+}
+img{
+    border-radius: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.orthodox p{
+    line-height: 1.7;
+    font-size: 1.1em;
+    color: white;
+    white-space: inherit;
+}
+.orthodox h3{
+    font-size: 3em;
+    margin-bottom: 16px;
+    border-bottom: 2px solid;
+    display: block;
+    width: 100%;
+    padding-bottom: 8px;
+}
+.orthodox{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+li{
+    color: rgba(255, 255, 255, 0.666);
+}
+
+.chalga{
+    border-style: solid;
+    background-color: rgba(0,0,0,0.35);
+    border-radius: 10px;
+    width: 70%;
+    padding: 30px;
+    margin: 0 auto;
+    backdrop-filter: blur(8px);
+    margin-top: 15px;
+}
+img{
+    border-radius: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.chalga p{
+    line-height: 1.7;
+    font-size: 1.1em;
+    color: white;
+    white-space: inherit;
+}
+.chalga h3{
+    font-size: 3em;
+    margin-bottom: 16px;
+    border-bottom: 2px solid;
+    display: block;
+    width: 100%;
+    padding-bottom: 8px;
+}
+.chalga{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
