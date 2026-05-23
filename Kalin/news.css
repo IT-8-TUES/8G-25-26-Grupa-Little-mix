@@ -1,0 +1,118 @@
+* {
+    font-family: 'Georgia', serif; 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:
+        linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.3),
+        rgba(0,128,0,0.3),
+        rgba(255,0,0,0.3)
+    ),
+    url("https://www.google.com/imgres?q=blank%20image&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F0f%2FBlank_Square.svg%2F500px-Blank_Square.svg.png%3Futm_source%3Dcommons.wikimedia.org%26utm_campaign%3Dindex%26utm_content%3Dthumbnail&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ABlank_Square.svg&docid=0Z6NUV25zx_PaM&tbnid=eZbTxnBaW1aAXM&vet=12ahUKEwjehvSe9cyUAxWwSfEDHasDBqgQnPAOegQIFxAB..i&w=500&h=500&hcb=2&ved=2ahUKEwjehvSe9cyUAxWwSfEDHasDBqgQnPAOegQIFxAB");
+}
+nav {
+    text-align: center; 
+}
+nav a {
+    color: black; 
+    text-decoration: none; 
+    margin: 0 15px; 
+}
+.text-container {
+    background-color: rgba(100, 100, 100, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 1000px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.text-container h4 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Make each table stack vertically and snap into view when scrolling */
+main {
+    scroll-snap-type: y mandatory;
+}
+
+.text-container table {
+    width: 100%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    margin: 0 auto 40px;
+    background: rgba(0,0,0,0.25);
+    border-radius: 10px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    min-height: 70vh; /* makes each table nearly viewport-height */
+    display: block;
+    padding: 30px;
+}
+
+.text-container table td {
+    padding: 20px;
+    vertical-align: top;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+/* Clickable thumbnail preview when embedding is blocked */
+.video-preview {
+    display: block;
+    position: relative;
+    max-width: 560px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.video-preview img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+.text-container table img {
+    max-width: 560px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+.video-preview .play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    pointer-events: none;
+}
+
