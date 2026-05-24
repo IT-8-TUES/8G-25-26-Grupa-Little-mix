@@ -44,7 +44,7 @@ nav a{
 nav a:hover{
     color: crimson;
 }
-nav #genres{
+nav .current{
     border: 2px solid crimson;
     border-radius: 5px;
     padding: 5px 10px;
@@ -52,7 +52,6 @@ nav #genres{
 
 
 .folk{
-    border-style: solid;
     background-color: rgba(0,0,0,0.35);
     border-radius: 10px;
     width: 70%;
@@ -90,7 +89,6 @@ img{
 
 
 .orthodox{
-    border-style: solid;
     background-color: rgba(0,0,0,0.35);
     border-radius: 10px;
     width: 70%;
@@ -130,7 +128,6 @@ li{
 }
 
 .chalga{
-    border-style: solid;
     background-color: rgba(0,0,0,0.35);
     border-radius: 10px;
     width: 70%;
@@ -167,7 +164,6 @@ img{
 }
 
 .hiphop{
-    border-style: solid;
     background-color: rgba(0,0,0,0.35);
     border-radius: 10px;
     width: 70%;
@@ -201,4 +197,5 @@ img{
     display: flex;
     flex-direction: column;
     gap: 12px;
+    margin-bottom: 15px;
 }
