@@ -86,13 +86,13 @@ html, body {
     margin: 0 auto;
     border-radius: 8px;
 }
-.news-table {
+.newsongs-table {
   width: 80%;
   margin: 0 auto;
   border-spacing: 14px;
 }
 
-.news-table td {
+.newsongs-table td {
   width: 50%;
   vertical-align: top;
   background: rgba(255,255,255,0.1);
@@ -100,12 +100,12 @@ html, body {
   padding: 12px;
 }
 
-.news-table td h3 {
+.newsongs-table td h3 {
   font-size: 13px;
   margin-bottom: 8px;
 }
 
-.news-table img {
+.newsongs-table img {
   width: 100%;
   border-radius: 6px;
 }
@@ -126,19 +126,59 @@ html, body {
   padding: 6px 14px;
   border-radius: 50%;
 }
-div.news-card {
+div.newsongs-card {
     margin: 40px auto;
     max-width: 1000px;
     padding: 20px;
     background: rgba(255,255,255,0.1);
     border-radius: 15px;
 }
-div.news-card h2 {
+div.newsongs-card h2 {
     font-family: 'Georgia', serif;
-    font-color"Bulgarian":white;
-    font-color"Music":green;
-    font-color"News":red;
+    color: white;
     margin-bottom: 20px;
     text-align: center;
 
+}
+footer {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 60px 40px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.footer-column p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+    max-width: 250px;
+}
+
+.footer-column a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-column a:hover {
+    color: white;
 }
