@@ -31,10 +31,7 @@ nav a{
 nav a:hover{
     color: crimson;
 }
-nav #home{
-    font-weight: bolder;
-    font-style: italic;
-}
+
 .hero{
     height: 90vh;
 
@@ -45,8 +42,7 @@ nav #home{
         rgba(0,128,0,0.3),
         rgba(255,0,0,0.3)
     ),
-    url("https://cdn.discordapp.com/attachments/1462064086354235517/1504172180982988820/image.png?ex=6a060502&is=6a04b382&hm=fca3d8ba8169b421a6e79dcd200a1e82d96cbbff9fda1bb177fbed2b6aae30a4");
-
+    url("https://cdn.discordapp.com/attachments/1462064086354235517/1504172180982988820/image.png?ex=6a152e42&is=6a13dcc2&hm=0ad2bab267073fdca4f4751d982b9476f93ab1cd85042293fa118565468d2c46&");
     background-size: cover;
     background-position: center;
 
@@ -59,6 +55,10 @@ nav #home{
 }
 .hero h2{
 color: white;
+}
+.music-image{
+    width: 300px;
+    border-radius: 10px;
 }
 .overlay{
     background-color: rgba(0,0,0,0.35);
@@ -116,5 +116,180 @@ button:hover{
 }
 #B{
     
-   
+}.music-banner{
+    height: 50vh;
+
+    background-image:
+    linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.3),
+        rgba(0,128,0,0.3),
+        rgba(255,0,0,0.3)
+    ),
+    url("https://chatgpt.com/s/m_6a141b767a84819183e839c663254b8d");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.music-banner h2{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.music-banner p{
+    font-size: 22px;
+    width: 70%;
+}
+
+.music-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+
+    padding: 80px 40px;
+
+    background-color: black;
+
+    flex-wrap: wrap;
+}
+
+.music-section img{
+    width: 400px;
+    border-radius: 15px;
+}
+
+.music-text{
+    width: 500px;
+}
+
+.music-text h2{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.music-text p{
+    color: white;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.reverse{
+    background-color: black;
+}
+
+.flag-section{
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+    linear-gradient(
+        to bottom,
+        white,
+        green,
+        red
+    );
+}
+
+.flag-section h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+
+    color: black;
+}
+
+.flag-section p{
+    font-size: 22px;
+    color: black;
+}
+.regions{
+    padding: 60px;
+    background-color: black;
+}
+
+.regions h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+}
+
+.region-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    flex-wrap: wrap;
+}
+
+.region-text{
+    color: white;
+    width: 500px;
+    line-height: 1.8;
+}
+
+.map{
+    width: 350px;
+}
+*{
+    font-family: 'Georgia', serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color:  rgba(255, 255, 255, 0.3);
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+
+header h1{
+    margin-bottom: 10px;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: black;
+}
+body{
+    background-image:
+        linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.3),
+        rgba(0,128,0,0.3),
+        rgba(255,0,0,0.3)
+    ),
+        url("https://www.google.com/imgres?q=blank%20image&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F0f%2FBlank_Square.svg%2F500px-Blank_Square.svg.png%3Futm_source%3Dcommons.wikimedia.org%26utm_campaign%3Dindex%26utm_content%3Dthumbnail&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ABlank_Square.svg&docid=0Z6NUV25zx_PaM&tbnid=eZbTxnBaW1aAXM&vet=12ahUKEwjehvSe9cyUAxWwSfEDHasDBqgQnPAOegQIFxAB..i&w=500&h=500&hcb=2&ved=2ahUKEwjehvSe9cyUAxWwSfEDHasDBqgQnPAOegQIFxAB");
+}
+nav {
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: crimson;
+}
+nav .current{
+    border: 2px solid crimson;
+    border-radius: 5px;
+    padding: 5px 10px;
 }
