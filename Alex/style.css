@@ -293,3 +293,30 @@ nav .current{
     border-radius: 5px;
     padding: 5px 10px;
 }
+footer {
+    background-color: green;
+    color: white;
+    padding: 40px 20px;
+}
+
+footer p,
+footer h3,
+footer a {
+    color: white;
+}
+
+.footer-column a {
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
