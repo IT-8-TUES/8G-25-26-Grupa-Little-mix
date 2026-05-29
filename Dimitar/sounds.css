@@ -1,8 +1,10 @@
 * {
+    font-family: 'Georgia', serif; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
  
 body {
     font-family: Arial, sans-serif;
@@ -12,28 +14,33 @@ body {
  
 
 header {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.3);
     padding: 20px;
     text-align: center;
 }
- 
+
 header h1 {
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 10px;
+    color: white;
 }
- 
+
 nav a {
     color: white;
     text-decoration: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 12px;
-    margin-right: 12px;
-    font-size: 16px;
+    margin: 15px;
+    font-size: 18px;
+    transition: color 0.3s;
 }
- 
+
 nav a:hover {
-    text-decoration: underline;
+    color: crimson;
+}
+
+nav .current {
+    border: 2px solid crimson;
+    border-radius: 5px;
+    padding: 5px 10px;
 }
  
 .page-title {
