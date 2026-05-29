@@ -1,29 +1,36 @@
 * {
-    font-family: 'Georgia', serif; 
+    font-family: 'Georgia', serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
-    background-image:
-        linear-gradient(
+
+body {
+    background-image: linear-gradient(
         to bottom,
         rgba(255,255,255,0.3),
         rgba(0,128,0,0.3),
         rgba(255,0,0,0.3)
-    ),
-    url("https://www.google.com/imgres?q=blank%20image&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F0f%2FBlank_Square.svg%2F500px-Blank_Square.svg.png%3Futm_source%3Dcommons.wikimedia.org%26utm_campaign%3Dindex%26utm_content%3Dthumbnail&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ABlank_Square.svg&docid=0Z6NUV25zx_PaM&tbnid=eZbTxnBaW1aAXM&vet=12ahUKEwjehvSe9cyUAxWwSfEDHasDBqgQnPAOegQIFxAB..i&w=500&h=500&hcb=2&ved=2ahUKEwjehvSe9cyUAxWwSfEDHasDBqgQnPAOegQIFxAB");
+    );
+    min-height: 100vh;
 }
+
 nav {
-    text-align: center; 
+    text-align: center;
 }
+
 nav a {
-    color: black; 
-    text-decoration: none; 
-    margin: 0 15px; 
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
 }
+
+html, body {
+    scroll-behavior: smooth;
+}
+
 .text-container {
-    background-color: rgba(100, 100, 100, 0.5);
+    background-color: rgb(158, 155, 155);
     backdrop-filter: blur(5px);
     border-radius: 15px;
     padding: 40px;
@@ -37,48 +44,20 @@ nav a {
     gap: 30px;
 }
 
-.text-container h4 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Make each table stack vertically and snap into view when scrolling */
-main {
-    scroll-snap-type: y mandatory;
-}
-
-.text-container table {
+.text-container > table {
     width: 100%;
-    max-width: 1000px;
-    border-collapse: collapse;
-    margin: 0 auto 40px;
     background: rgba(0,0,0,0.25);
     border-radius: 10px;
     overflow: hidden;
-    scroll-snap-align: start;
-    min-height: 70vh; /* makes each table nearly viewport-height */
-    display: block;
     padding: 30px;
 }
 
-.text-container table td {
+.text-container > table td {
     padding: 20px;
     vertical-align: top;
 }
 
-.video-container img {
-    display: flex;
-    justify-content: center;
-    border: 3px solid #ff0000;
-    border-radius: 10px;
-}
-
-html, body {
-    scroll-behavior: smooth;
-}
-.text-container table img {
+.text-container > table img {
     max-width: 560px;
     width: 100%;
     height: auto;
@@ -86,64 +65,123 @@ html, body {
     margin: 0 auto;
     border-radius: 8px;
 }
-.newsongs-table {
-  width: 80%;
-  margin: 0 auto;
-  border-spacing: 14px;
+
+.video-container img {
+    border: 3px solid #ff0000;
+    border-radius: 10px;
+    width: 100%;
 }
 
-.newsongs-table td {
-  width: 50%;
-  vertical-align: top;
-  background: rgba(255,255,255,0.1);
-  border-radius: 10px;
-  padding: 12px;
-}
-
-.newsongs-table td h3 {
-  font-size: 13px;
-  margin-bottom: 8px;
-}
-
-.newsongs-table img {
-  width: 100%;
-  border-radius: 6px;
-}
-
-.video-preview {
-  position: relative;
-  display: block;
-}
-
-.video-preview .play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 32px;
-  color: white;
-  background: rgba(0,0,0,0.6);
-  padding: 6px 14px;
-  border-radius: 50%;
-}
-div.newsongs-card {
-    margin: 40px auto;
-    max-width: 1000px;
-    padding: 20px;
+.news-card {
+    width: 100%;
     background: rgba(255,255,255,0.1);
     border-radius: 15px;
+    padding: 20px;
 }
-div.newsongs-card h2 {
-    font-family: 'Georgia', serif;
+
+.news-card h2 {
     color: white;
     margin-bottom: 20px;
     text-align: center;
-
 }
+
+.newsongs-table {
+    width: 100%;
+    border-spacing: 14px;
+    border-collapse: separate;
+}
+
+.newsongs-table td {
+    width: 50%;
+    vertical-align: top;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.newsongs-table td h3 {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.newsongs-table img {
+    width: 100%;
+    border-radius: 6px;
+    border: none !important;
+}
+
+.video-preview {
+    position: relative;
+    display: block;
+}
+
+.video-preview .play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    color: white;
+    background: rgba(0,0,0,0.6);
+    padding: 6px 14px;
+    border-radius: 50%;
+}
+
+
+.concerts-table {
+    width: 100%;
+    border-spacing: 16px;
+    border-collapse: separate;
+    margin-top: 20px;
+    table-layout: fixed;
+    color:#ffffff
+}
+.concerts-table h1 {
+    text-align: right;
+    margin-bottom: 20px;
+    color: white;
+}
+.concerts-table > tr > td {
+    width: 400px;
+    height: 900px;
+    vertical-align: top;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 0;
+}
+
+.concerts-table > tr > td > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    display: block;
+    border: none;
+}
+
+.concert-info {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(87, 85, 85, 0.5);
+    color: black;
+}
+
+.concert-info td {
+    padding: 7px 12px;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    word-break: break-word;
+}
+
+.concert-info tr td:first-child {
+    color: rgba(255,255,255,0.6);
+    width: 45%;
+}
+
 footer {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(0,0,0);
     padding: 60px 40px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 .footer-columns {
@@ -169,16 +207,65 @@ footer {
 .footer-column p {
     font-size: 16px;
     line-height: 1.6;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     max-width: 250px;
 }
 
 .footer-column a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 16px;
 }
 
 .footer-column a:hover {
     color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 13px;
+}
+.container{
+    max-width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;     
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+#live-page-clock {
+    position: fixed;     
+    top: 20px;         
+    right: 20px;         
+    z-index: 9999;    
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #ffffff;       
+    padding: 10px 15px;    
+    border-radius: 8px;    
+    font-family: 'Courier New', monospace; 
+    font-size: 18px;      
+    font-weight: bold;     
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    letter-spacing: 1px;   
+}
+.like-btn {
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.like-btn:hover {
+    background-color: #ff6b81;
+}
+
+.like-btn.active {
+    background-color: #2ed573;
 }
