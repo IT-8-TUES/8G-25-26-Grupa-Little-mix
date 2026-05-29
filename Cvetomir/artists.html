@@ -1,26 +1,233 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bulgarian Music Culture</title>
+    <title>Artists</title>
     <link rel="stylesheet" href="artists.css">
 </head>
 <body>
-    
+
     <header>
         <h1>Bulgarian Music Culture</h1>
-
         <nav>
-            <a id="home" href="#">Home</a>
-            <a id="genres" href="#">Genres</a>
-            <a id="artists" href="#">Artists</a>
-            <a id="history" href="#">History</a>
-            <a id="instruments" href="#">Instruments</a>
-            <a id="contact" href="#">Contact</a>
-            <a id="news" href="#">Music news</a>
+            <a id="home" href="index.html">Home</a>
+            <a id="genres" href="genres.html">Genres</a>
+            <a class="current" id="artists" href="artists.html">Artists</a>
+            <a id="history" href="history.html">History</a>
+            <a id="instruments" href="instruments.html">Instruments</a>
+            <a id="news" href="news.html">Music news</a>
         </nav>
     </header>
+
+    <div class="page">
+
+        <!-- FOLK -->
+        <div class="genre-section">
+            <h3>Folk Artists</h3>
+            <div class="artists-grid">
+                <div class="artist-card">
+                    <img src="/valkana.jpg">
+                    <div class="artist-info">
+                        <span class="artist-name">Valkana Stoyanova</span>
+                        <button class="toggle-btn" onclick="toggleBio(this)">+</button>
+                    </div>
+                    <div class="artist-bio">
+                        <p>Valkana Stoyanova was born in the village of Lyulin , Yambol Region , on July 13, 1922. She was the youngest child in a large family, including 4 stepchildren and 6 stepbrothers. The singer claims that she inherited her singing skills from both of her parents, as well as from one of her paternal brothers, who was a priest and had a wonderfully beautiful voice. The singer's large repertoire of songs is mostly inherited from her mother, and they were learned at gatherings and gatherings. Valkana says that she has a preference for slow, table songs, which tell various stories from people's lives.
+                    
+                        </p> <a href="https://www.youtube.com/watch?v=HI-eFCJJfHg&list=OLAK5uy_kEe0mqlY4KIDWXAu8a45exfU1OBI1l4tQ" target="_blank">Listen to her from here!</a> </div>
+                </div>
+
+                <div class="artist-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/%D0%A4%D0%B8%D0%BB%D0%B8%D0%BF_%D0%9A%D1%83%D1%82%D0%B5%D0%B2_13-05-17-95590_2.jpg">
+                    <div class="artist-info">
+                        <span class="artist-name">Filip Kutev</span>
+                        <button class="toggle-btn" onclick="toggleBio(this)">+</button>
+                    </div>
+                    <div class="artist-bio"><p>Filip Kutev (Bulgarian: Филип Кутев), often anglicized Philip Koutev (13 June 1903 – 27 November 1982), was a Bulgarian composer, arranger and founder, with his wife Maria Kuteva, in 1951, of Bulgaria's first professional, state supported ensemble, the State Ensemble for Folk Song and Dance, also known as the Filip Kutev Ensemble. With his ensemble he pioneered a style of arranging folk songs by fusing folk elements with western classical forms and harmonies, and established a new Bulgarian choral tradition.
+                        </p><a href="https://www.youtube.com/watch?v=jJGO0lj6k7s&list=PLUvGxAwHKi0DS3mQo3ln23JXUbCZkvrpG" target="_blank">Listen to him from here!</a></div>
+                </div>
+
+                <div class="artist-card">
+                    <img src="https://3seaseurope.com/wp-content/uploads/2022/08/valya-balkanska.webp">
+                    <div class="artist-info">
+                        <span class="artist-name">Valya Balkanska</span>
+                        <button class="toggle-btn" onclick="toggleBio(this)">+</button>
+                    </div>
+                    <div class="artist-bio"><p>Valya Mladenova Balkanska (Bulgarian: Валя Младенова Балканска; born Feyme Kestebekova, Bulgarian: Фейме Кестебекова; on 8 January 1942) is a Bulgarian folk singer from the Rhodope Mountains known locally for her wide repertoire of Balkan folk songs, but in the West mainly for singing the song "Izlel ye Delyo Haydutin", part of the Voyager Golden Record selection of music included in the two Voyager spacecraft launched in 1977. Born as Feyme Kestebekova in a Pomak family in a hamlet near the village of Arda, Smolyan Province, Balkanska has been singing Rhodope folk songs since her early childhood.
+
+                    </p><a href="https://www.youtube.com/watch?v=egg48PDiR4U&list=PLXmC33PjFo-TT3qK6PtlOtRT-Pej-D9o2" target="_blank">Listen to her from here!</a></div>
+                </div>
+                <div class="artist-card">
+                    <img src="https://www.sevlievo-online.com/images/canvas/articles/kultura/nikolina-chakardakova-predstavya-spektakala-balkanskata-muzika_653x578.webp?v=1723702194">
+                    <div class="artist-info">
+                        <span class="artist-name">Nikolina Chakardakova</span>
+                        <button class="toggle-btn" onclick="toggleBio(this)">+</button>
+                    </div>
+                    <div class="artist-bio"><p>Nikolina Ivanova Chakardakova is a Bulgarian folk singer , performer of folk songs from the Macedonian folklore region. She was born on September 4, 1969 in the town of Gotse Delchev . Annual participant in the New Year's program of the Bulgarian National Television "Stage under the Stars".Nikolina Chakardakova first appeared on the professional stage at the age of fourteen. In the 1980s, she established herself as a soloist in the Nevrokop Ensemble , captivating audiences in Bulgaria , Western Europe , and Canada.
+                    </p><a href="https://www.youtube.com/@chakardakova" target="_blank">Listen to her from here!</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ORTHODOX -->
+        <div class="genre-section">
+            <h3>Orthodox Artists</h3>
+            <div class="artists-grid">
+                <div class="artist-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Boris_Christoff%2C_1948_-_collezione_Tino_Barindelli.tif/lossy-page1-960px-Boris_Christoff%2C_1948_-_collezione_Tino_Barindelli.tif.jpg">
+                    <div class="artist-info">
+                        <span class="artist-name">Boris Christoff</span>
+                        <button class="toggle-btn" onclick="toggleBio(this)">+</button>
+                    </div>
+                    <div class="artist-bio"><p>He was born in Plovdiv on 18 May 1914 to parents Kyryl Christov and Rayna Teodorova. His grand-father Hristo Sovichanov had been a famous cantor at Bitola (then in the Ottoman Empire). Where he was singing in the Bulgarian Exarchist church, during the service many other believers (Turks, Jews) gathered in front of the church entrance to listen to him. Being also a Bulgarian revolutionary, as well as his son Kyryl, after the defeat of the Ilinden–Preobrazhenie Uprising, they moved to Bulgaria. All three of Hristo's children were good singers, Kyryl (Boris Christoff's father) was a tenor, sang at secular and church choirs, sang also for Radio Sofia and for the Institute of Music at the BAS.
+                    </p> <a href="https://www.youtube.com/@borischristoffmusicsociety6025" target="_blank">Listen to him from here!</a> </div>
+                </div>
+                <div class="artist-card">
+                    <img src="http://artbulgaria.eu/img/m/18-manufacturers_default.jpg">
+                    <div class="artist-info">
+                        <span class="artist-name">Nicola Ghiuselev</span>
+                        <button class="toggle-btn" onclick="toggleBio(this)">+</button>
+                    </div>
+                    <div class="artist-bio"><p>Ghiuselev was born on 17 August 1936 in Pavlikeni. He was the son of Nicolai Ghiuselev and Elisaveta Ghiuseleva. He studied painting at the Academy of Arts in Sofia, and later voice at the school of the National Opera of Sofia, with Christo Brambarov. He made his stage debut with that company, as Timur in Turandot, in 1960. In 1965, with the Sofia Opera, he toured Germany, the Netherlands and France, and made his debut at the Metropolitan Opera of New York, as Ramfis in Aida, quickly followed by King Philip II in Don Carlo, and the title role in Boris Godunov. In two seasons with the Met, he sang as Raimondo in Lucia di Lammermoor, the Commendatore in Don Giovanni, Colline in La bohème.
+                    </p> <a href="https://www.youtube.com/watch?v=BkPqECPPkDY&list=PLAVTGdZo90dpFbkt4rM8Z1bsAzs_PhmO-" target="_blank">Listen to him from here!</a> </div>
+                </div>
+                <div class="artist-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/%D0%9A%D0%B2%D0%B0%D1%80%D1%82%D0%B5%D1%82_%D0%A1%D0%B2%D0%B5%D1%82%D0%BE%D0%B3%D0%BB%D0%B0%D1%81_-%D0%A2%D0%B0%D0%B9%D0%BD%D1%81%D1%82%D0%B2%D0%BE%D1%82%D0%BE_%D0%BD%D0%B0_%D0%91%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B0%D1%82%D0%B0_%D0%9F%D0%BE%D0%BB%D0%B8%D1%84%D0%BE%D0%BD%D0%B8%D1%8F%C2%A9_03.jpg/1920px-%D0%9A%D0%B2%D0%B0%D1%80%D1%82%D0%B5%D1%82_%D0%A1%D0%B2%D0%B5%D1%82%D0%BE%D0%B3%D0%BB%D0%B0%D1%81_-%D0%A2%D0%B0%D0%B9%D0%BD%D1%81%D1%82%D0%B2%D0%BE%D1%82%D0%BE_%D0%BD%D0%B0_%D0%91%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B0%D1%82%D0%B0_%D0%9F%D0%BE%D0%BB%D0%B8%D1%84%D0%BE%D0%BD%D0%B8%D1%8F%C2%A9_03.jpg">
+                    <div class="artist-info">
+                        <span class="artist-name">Svetoglas</span>
+                        <button class="toggle-btn" onclick="toggleBio(this)">+</button>
+                    </div>
+                    <div class="artist-bio"><p>Svetoglas - The Mystery of Bulgarian Polyphony is the first Bulgarian male voice formation for ancestral polyphonic music. The ensemble was founded in 2009 by Daniel Spassov and Milen E. Ivanov (Soloists in the Le Mystère des Voix Bulgares) from the idea of an evocation of polyphonic sacred music and Bulgarian folklore. The formation lists also the young folk artists Stanimir Ivanov and Viktor Tomanov. In 2012 Svetoglas released their first musical project called "The Wheel of Life" which presents, in chronological order, Traditional music and Bulgarian Orthodox Church hymns on birth, life, death and the afterlife. The project is implemented with the support of Municipality of Sofia.
+                    </p> <a href="https://www.youtube.com/@BulgarianPolyphony/videos" target="_blank">Listen to them from here!</a> </div>
+                </div>
+                <div class="artist-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Sofia_Boys_Choir.jpg/960px-Sofia_Boys_Choir.jpg">
+                    <div class="artist-info">
+                        <span class="artist-name">Sofia Boys Choir</span>
+                        <button class="toggle-btn" onclick="toggleBio(this)">+</button>
+                    </div>
+                    <div class="artist-bio"><p>The Sofia Boys Choir, founded in 1968, is the first boys' choir in Bulgaria. Artists from 8 to 15 years old are selected from schools in Sofia. Adriana Blagoeva has been a conductor of the choir since 1989. In 1997, she founded the Youth Formation ensemble with the Sofia Boys Choir, consisting of former members of the boys' choir. Today the choir has three ensembles: boys, youth, and mixed. The Sofia Boys Choir has a very wide-ranging repertoire, including Bulgarian choral music, Orthodox music, Bulgarian folk music, and choral pieces in various other musical genres and eras, from the 14th century to today. The choir also performs in musicals and operas. 
+                    </p> <a href="https://www.youtube.com/@SofiaBoysChoir/videos" target="_blank">Listen to them from here!</a> </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CHALGA -->
+        <div class="genre-section">
+            <h3>Chalga Artists</h3>
+            <div class="artists-grid">
+
+                <div class="artist-card">
+                    <img src="https://cache1.24chasa.bg/Images/cache/496/Image_22669496_128_0.jpg">
+                    <div class="artist-info">
+                        <span class="artist-name">Azis</span>
+                        <button class="toggle-btn" onclick="toggleBio(this)">+</button>
+                    </div>
+                    <div class="artist-bio">
+                        <p>Vasil Troyanov Boyanov (Bulgarian: Васил Троянов Боянов; born 7 March 1978), professionally known as Azis (Bulgarian: Азис), is a Bulgarian Romani singer and songwriter. Widely known as the "King of Pop-Folk", Azis initially rose to prominence in the Balkans and Eastern Europe performing mostly chalga, a Bulgarian version of pop-folk. Azis has collaborated with other Bulgarian pop-folk singers such as Gloria, Malina, Sofi Marinova, Galena, Preslava, Toni Storaro, and Bulgarian rap artists Ustata and Vanko 1. His repertoire also includes duets with singers from the former Yugoslavia, including Indira Radić, Marta Savić, Jelena Karleuša, Severina and Tea Tairović.
+                        </p> <a href="https://www.youtube.com/@Azis/videos" target="_blank">Listen to him from here!</a> </div>
+                </div>
+
+                <div class="artist-card">
+                    <img src="https://cdn.marica.bg/images/marica.bg/1425/1200_toni-storaro.webp">
+                    <div class="artist-info">
+                        <span class="artist-name">Toni Storaro</span>
+                        <button class="toggle-btn" onclick="toggleBio(this)">+</button>
+                    </div>
+                    <div class="artist-bio"><p>Toni Storaro, born Tuncher Fikret Ali, has established himself as one of the largest names in Bulgarian popular and chalga music. A prolific artist, in 15 years, he produced 11 albums in Bulgarian and Turkish languages and around 30 hits. He is known for his warm, rich, deep and unique voice with rich ornamentation mixing various Balkan influences (Bulgarian, Turkish, Greek and Serb). His 2005 album "For one woman" (Bulgarian: За една жена) with various Balkan songs recorded in Germany was a huge hit with multiple singles and an eventual "Виртуозно майсторство" (virtuoso mastery) coveted award at the 8th Annual Awards for New "Folk" (Bulgarian: Годишни награди на "Нов фолк").
+                    </p> <a href="https://www.youtube.com/@StoraroMusic/videos" target="_blank">Listen to him from here!</a> </div>
+                </div>
+                <div class="artist-card">
+                    <img src="https://m.netinfo.bg/media/images/50789/50789641/861-483-preslava-nova-pesen-april.jpg">
+                    <div class="artist-info">
+                        <span class="artist-name">Preslava</span>
+                        <button class="toggle-btn" onclick="toggleBio(this)">+</button>
+                    </div>
+                    <div class="artist-bio"><p>Petya Koleva Ivanova aka Preslava was born on June 26, 1984, in Dobrich, Bulgaria. Her mother, Yanka Toncheva was a seamstress. Her father, Kolyo Tonchev, was a worldwide race car driver. Ivanova has an older sister named Ivelina who is a folk singer. She sang her first song when she was 7 years old. Despite her parents disapproval, she started singing in nightclubs aged 15. She completed her musical education with the specialty 'folk singing' with Gadulka speciality. During the winter of 2004 a prominent singer from the music company Payner, Milko Kalaidjiev asked her to perform with his group for a few events. Impressed by her excessive talent, he helped her to become a part of the company.
+                    </p> <a href="https://www.youtube.com/@PRESLAVAChannel/videos" target="_blank">Listen to her from here!</a> </div>
+                </div>
+                <div class="artist-card">
+                    <img src="https://www.famousbirthdays.com/faces/marinova-sofi-image.jpg">
+                    <div class="artist-info">
+                        <span class="artist-name">Sofi Marinova</span>
+                        <button class="toggle-btn" onclick="toggleBio(this)">+</button>
+                    </div>
+                    <div class="artist-bio"><p>Sofi Marinova was born 5 December 1975 in Sofia, Bulgaria, although her family was living near Etropole at the time. She displayed musical talent at the age of two, and was tutored in singing and dancing by her mother. After 8th grade, she transferred to a professional school for tailors, though she later she admitted she never liked sewing. While at school, Marinova fell for acting, appearing in school musicals such as Snow White. When she was in 10th grade, a local band offered her the position of lead singer. Her father didn't allow it at first, but relented after the insistence of her mother: "I started crying and my mother supported me, because when she married my father she had to put an end to her singing career".
+                    </p> <a href="https://www.youtube.com/@SofiMarinovaOfficial/videos" target="_blank">Listen to her from here!</a> </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HIP-HOP -->
+        <div class="genre-section">
+            <h3>Hip-hop Artists</h3>
+            <div class="artists-grid">
+           <div class="artist-card">
+                    <img src="https://scontent.fsof11-1.fna.fbcdn.net/v/t39.30808-6/476353109_1176807177139458_5964030591246649741_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=7oVWsHXPa10Q7kNvwEVegyH&_nc_oc=AdrOVBxLoS1CLST_aGqb-ydIRp_dz4ik-UotueMCOMPeDkaXQXZWPZ2rGss5INocmwk&_nc_zt=23&_nc_ht=scontent.fsof11-1.fna&_nc_gid=IhFW5nzv8L-kNi8WHGADOw&_nc_ss=7b289&oh=00_Af7EITE6gWoVKRgtjWXI31_DwOpHEaTdvfruoriuVfg2ZA&oe=6A1F53F1">
+                    <div class="artist-info">
+                        <span class="artist-name">MBT</span>
+                        <button class="toggle-btn" onclick="toggleBio(this)">+</button>
+                    </div>
+                    <div class="artist-bio"><p>MBT is a Bulgarian hip-hop artist hailing from Sofia, known for blending classic hip-hop with modern trap elements. His music reflects the struggles and triumphs of urban life, characterized by raw and honest lyrics. MBT has quickly become a standout in the local music scene, earning a loyal fanbase with tracks like "Bajki" and "Sinep." His unfiltered approach and unique style have solidified his position as a prominent figure in Bulgarian hip-hop.
+                    </p> <a href="https://www.youtube.com/@MBTBGN/videos" target="_blank">Listen to him from here!</a> </div>
+                </div>
+                <div class="artist-card">
+                    <img src="https://www.musictour.eu/sites/default/files/pictures/blog/02_upsurt_0.jpg">
+                    <div class="artist-info">
+                        <span class="artist-name">Upsurt</span>
+                        <button class="toggle-btn" onclick="toggleBio(this)">+</button>
+                    </div>
+                    <div class="artist-bio"><p>Upsurt is a Bulgarian hip-hop band founded in the beginning of 1996 by childhood friends Itso Hazarta, Butch, Bat 'Bro' Ventsi and Panchev. Their first records were recorded in Sudibula studio in January 1996. After a while, Shlevi Panchev left the band and only three members remained. The band have released four albums during their career. Since the fourth and to date final, Quattro, in 2005, the band have opted to release singles instead of albums. In 2019, Butch left the band, leaving only Itso and Ventsi.
+                    </p> <a href="https://www.youtube.com/watch?v=y4nSn-OjPGw&list=PLvvqitqT_84dNkI__p8u7MvWXKFb1n7rf" target="_blank">Listen to her from here!</a> </div>
+                </div>
+                <div class="artist-card">
+                    <img src="https://menuground.com/wp-content/uploads/2023/08/Krisko_Artist_Image01.jpg">
+                    <div class="artist-info">
+                        <span class="artist-name">Krisko</span>
+                        <button class="toggle-btn" onclick="toggleBio(this)">+</button>
+                    </div>
+                    <div class="artist-bio"><p>Kristian Radoslavov Talev (Bulgarian: Кристиан Радославов Талев; born 11 May 1988) better known by his stage name Krisko (Bulgarian: Криско), is a Bulgarian recording artist, songwriter, producer and entrepreneur. He is signed to the Bulgarian record label Facing The Sun Records and is also co-owner of the label Adamand Records. Kristian Talev was born on 11 May 1988 in the Bulgarian capital Sofia. Having spent most of his childhood in Gabrovo, his interest in music stems from his family and relatives, who inspired him to pursue a serious involvement in music.
+                </p> <a href="https://www.youtube.com/@KriskoOfficial/videos" target="_blank">Listen to him from here!</a> </div>
+                </div>
+                <div class="artist-card">
+                    <img src="https://menuground.com/wp-content/uploads/2023/08/100_Kila_Artist_Image01.jpg">
+                    <div class="artist-info">
+                        <span class="artist-name">100 Kila</span>
+                        <button class="toggle-btn" onclick="toggleBio(this)">+</button>
+                    </div>
+                    <div class="artist-bio"><p>Yavor Dimitrov Yanakiev (Bulgarian: Явор Димитров Янакиев), better known by his stage name 100 Kila (Bulgarian: 100 Кила; also stylized as 100KILA), is a Bulgarian rapper, actor, songwriter and entrepreneur from Varna. His stage name is a short form of the phrase "100 kilograms" in Bulgarian. Yanakiev was born and raised in a Romani neighborhood of concentrated poverty in Asparuhovo, Varna. He lived with his parents and brother, until their father left them. In the mid 90s his mother moved to Greece, in hopes of sustaining her family and to encourage Yavor's education. His parents separated when he was 6.
+                    </p> <a href="https://www.youtube.com/@100KILAOFFICIAL/videos" target="_blank">Listen to him from here!</a> </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+        <footer>
+    <div class="footer-columns">
+
+        <div class="footer-column">
+            <h3>For us</h3>
+            <p>Dedicated to preserving and promoting the rich heritage of Bulgarian folk music and traditional instruments.</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contacts</h3>
+            <a href="mailto:info@bgmusic.bg">📧 info@bgmusic.bg</a>
+            <a href="https://www.google.com/maps/place/%D0%A1%D0%BE%D1%84%D0%B8%D1%8F/@42.6954322,23.3239467,12z/data=!3m1!4b1!4m6!3m5!1s0x40aa8682cb317bf5:0x400a01269bf5e60!8m2!3d42.6977082!4d23.3218675!16zL20vMGZ0ang?entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D">📍 София, България</a>
+            <a href="tel:+359 2 000 0000">📞 +359 2 000 0000</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Bulgarian Traditional Instruments. All rights reserved.</p>
+    </div>
+</footer>  
+
+    <script src="artists.js"></script>
+
 
 </body>
 </html>
