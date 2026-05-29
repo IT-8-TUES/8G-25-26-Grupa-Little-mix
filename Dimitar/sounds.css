@@ -10,7 +10,7 @@ body {
     color: white;
 }
  
-/* Header */
+
 header {
     background-color: rgba(255, 255, 255, 0.15);
     padding: 20px;
@@ -25,7 +25,10 @@ header h1 {
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 12px;
+    margin-right: 12px;
     font-size: 16px;
 }
  
@@ -33,10 +36,12 @@ nav a:hover {
     text-decoration: underline;
 }
  
-/* Page title */
 .page-title {
     text-align: center;
-    padding: 50px 20px 30px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
 }
  
 .page-title h2 {
@@ -49,16 +54,18 @@ nav a:hover {
     color: rgba(255, 255, 255, 0.7);
 }
  
-/* Grid */
+
 .grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
-    padding: 20px 40px 60px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 60px;
 }
  
-/* Card */
 .card {
     width: 260px;
     background-color: rgba(255, 255, 255, 0.08);
@@ -75,24 +82,28 @@ nav a:hover {
  
 .card h3 {
     font-size: 24px;
-    margin: 16px 0 8px;
+    margin-top: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 8px;
 }
  
 .card p {
     font-size: 15px;
     line-height: 1.5;
-    padding: 0 14px 16px;
+    padding-top: 0;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 16px;
     color: rgba(255, 255, 255, 0.8);
 }
  
 .card a {
     display: block;
-    margin: 0 14px 20px;
-    padding: 10px;
+    padding: 14px 20px;
     background-color: crimson;
     color: white;
     text-decoration: none;
-    border-radius: 6px;
     font-size: 15px;
 }
  
@@ -100,10 +111,12 @@ nav a:hover {
     background-color: darkred;
 }
  
-/* Footer */
 footer {
     background-color: rgba(255, 255, 255, 0.05);
-    padding: 60px 40px 0;
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -130,12 +143,12 @@ footer {
 .footer-column p {
     font-size: 16px;
     line-height: 1.6;
-    color: white
+    color: white;
     max-width: 250px;
 }
 
 .footer-column a {
-    color: white
+    color: white;
     text-decoration: none;
     font-size: 16px;
 }
@@ -149,4 +162,5 @@ footer {
     padding: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 14px;
-    color: white
+    color: white;
+}

@@ -10,7 +10,6 @@ body {
     color: white;
 }
  
-/* Header */
 header {
     background-color: rgba(255, 255, 255, 0.15);
     padding: 20px;
@@ -33,11 +32,11 @@ nav a:hover {
     text-decoration: underline;
 }
  
-/* Hero */
 .hero {
     height: 80vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                      url("https://images.unsplash.com/photo-1511379938547-c1f69419868d");
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("background_proekt_it.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -49,6 +48,10 @@ nav a:hover {
     gap: 20px;
 }
  
+.hero-content {
+    text-align: center;
+    max-width: 700px;
+}
 .hero h2 {
     font-size: 48px;
 }
@@ -58,8 +61,11 @@ nav a:hover {
     max-width: 600px;
     line-height: 1.6;
 }
- 
-/* Button */
+.div{
+    background-color: black;
+
+}
+
 button {
     padding: 14px 30px;
     border: none;
@@ -67,17 +73,17 @@ button {
     color: white;
     font-size: 16px;
     border-radius: 6px;
-    cursor: pointer;
 }
  
 button:hover {
     background-color: darkred;
 }
  
-/* Instruments */
 .instruments {
-    padding: 60px 20px;
-    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;    text-align: center;
 }
  
 .instruments h2 {
@@ -96,7 +102,6 @@ button:hover {
     width: 260px;
     background-color: rgba(255, 255, 255, 0.08);
     border-radius: 12px;
-    overflow: hidden;
 }
  
 .card img {
@@ -107,19 +112,28 @@ button:hover {
  
 .card h3 {
     font-size: 24px;
-    margin: 16px 0 8px;
+    margin-top: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 8px;
 }
  
 .card p {
     font-size: 15px;
     line-height: 1.5;
-    padding: 0 14px 20px;
+    padding-top: 0;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 20px;
     color: rgba(255, 255, 255, 0.8);
 }
  
 footer {
     background-color: rgba(255, 255, 255, 0.05);
-    padding: 60px 40px 0;
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -146,12 +160,12 @@ footer {
 .footer-column p {
     font-size: 16px;
     line-height: 1.6;
-    color: white
+    color: white;
     max-width: 250px;
 }
 
 .footer-column a {
-    color: white
+    color: white;
     text-decoration: none;
     font-size: 16px;
 }
@@ -166,4 +180,17 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 14px;
     color: white
+}
+
+#top-btn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 12px 16px;
+    background-color: crimson;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
 }
