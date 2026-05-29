@@ -1,21 +1,15 @@
-*{
+* {
     font-family: 'Georgia', serif; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header{
-    background-color:  rgba(255, 255, 255, 0.3);
-    padding: 20px 0 10px 0;
-    text-align: center;
-}
-
-header h1{
-    margin-bottom: 10px;
-    font-size: 2.2em;
-    font-weight: bold;
-    color: black;
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    padding-bottom: 30px;
 }
 body{
     background-image:
@@ -27,28 +21,36 @@ body{
     ),
         url("https://www.google.com/imgres?q=blank%20image&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F0f%2FBlank_Square.svg%2F500px-Blank_Square.svg.png%3Futm_source%3Dcommons.wikimedia.org%26utm_campaign%3Dindex%26utm_content%3Dthumbnail&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ABlank_Square.svg&docid=0Z6NUV25zx_PaM&tbnid=eZbTxnBaW1aAXM&vet=12ahUKEwjehvSe9cyUAxWwSfEDHasDBqgQnPAOegQIFxAB..i&w=500&h=500&hcb=2&ved=2ahUKEwjehvSe9cyUAxWwSfEDHasDBqgQnPAOegQIFxAB");
 }
-nav {
+
+header {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
     text-align: center;
-    padding: 10px 0;
 }
 
-nav a{
-    color: rgb(0, 0, 0);
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+nav a {
+    color: white;
     text-decoration: none;
-    margin: 0 20px;
-    font-size: 1.1em;
-    transition: 0.3s;
+    margin: 15px;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
-nav a:hover{
+nav a:hover {
     color: crimson;
 }
-nav .current{
+
+nav .current {
     border: 2px solid crimson;
     border-radius: 5px;
     padding: 5px 10px;
 }
-
 footer {
     background-color: rgba(255, 255, 255, 0.05);
     padding: 60px 40px 0;
@@ -73,17 +75,18 @@ footer {
 .footer-column h3 {
     font-size: 20px;
     margin-bottom: 5px;
+    color: white;
 }
 
 .footer-column p {
     font-size: 16px;
     line-height: 1.6;
-    color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.85);
     max-width: 250px;
 }
 
 .footer-column a {
-    color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.85);
     text-decoration: none;
     font-size: 16px;
 }
@@ -97,5 +100,5 @@ footer {
     padding: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 14px;
-    color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.6);
 }
